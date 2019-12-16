@@ -3,14 +3,26 @@
 	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
+html{
+	font-size: 16px;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /** Base Styling **/
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
 }
 
 h1, h2, h3, h4 {
@@ -20,32 +32,36 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 1.875em; /** 30px **/
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5em; /** 24px **/
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 1.125; /** 18px **/
 }
 
 h4 {
-	font-size: 12px;
+	font-size: .75em; /** 12px **/
 }
 
 p {
-	font-size: 14px;
+	font-size: .875em; /** 14px **/
 	line-height: 21px;
-    padding: 0 30px;
+  padding: 0 30px;
 }
 
-/*The widths are in a percentage!*/
+/** Header **/
 header {
 	height: 110px;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
 }
 
 header h1 {
@@ -70,7 +86,7 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: .875em; /** 14px **/
 	padding: 0 10px;
 	list-style: none;
 }
@@ -84,6 +100,10 @@ header nav ul li a{
 .top-section, .bottom-section {
 	margin: 0 auto;
 	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
 }
 
 .main-image {
@@ -110,7 +130,7 @@ header nav ul li a{
 
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em; /** 16px **/
 	line-height: 25px;
 }
 
@@ -140,12 +160,12 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
+	font-size: 1em; /** 16px **/
 	line-height: 21px;
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1em; /** 16px **/
 	line-height: 24px;
 }
 
@@ -156,17 +176,25 @@ footer {
 	margin: 0 auto;
 	clear: both;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875em; /** 14px **/
 }
 
 /** Tablet **/
-@media (min-width: 700px) {
+@media (min-width: 600px) {
+	.section-one, .section-two, .section-three {
+	width: 33%;
+	display: inline;
+}
+
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
@@ -185,6 +213,7 @@ footer span {
 
 	.section-one, .section-two, .section-three {
 	width: 33%;
+	display: inline;
 }
 
 .section-two {
