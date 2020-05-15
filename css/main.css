@@ -56,7 +56,6 @@ p {
 /** Header **/
 header {
 	height: 110px;
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
