@@ -80,6 +80,7 @@ header nav ul {
 }
 
 header nav ul li {
+	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em; /** 14px **/
@@ -182,7 +183,6 @@ footer span {
 @media (min-width: 768px) {
 	.section-one, .section-two, .section-three {
 	width: 33%;
-	display: inline;
 }
 
 	.section-two {
