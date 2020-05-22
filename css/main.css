@@ -18,11 +18,12 @@ body {
 /** Base Styling **/
 .container{
 	max-width: 1200px;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 }
 
 h1, h2, h3, h4 {
@@ -85,7 +86,7 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em; /** 14px **/
-	padding: 0 30px;
+	padding: 10px 15px;
 	list-style: none;
 }
 
@@ -115,6 +116,7 @@ header nav ul li a{
 
 .main-title {
 	height: auto;
+	padding: 15px;
 }
 
 .main-title h3 {
@@ -183,7 +185,7 @@ footer span {
 /** Tablet **/
 @media (min-width: 768px) {
 	.section-one, .section-two, .section-three {
-	width: 33%;
+		width: 33%;
 }
 
 	.section-two {
@@ -194,22 +196,27 @@ footer span {
 
 /** Desktop **/
 @media (min-width: 1200px) {
+
+	/** Desktop Navigation modification **/
+	header nav ul{
+		display: flex;
+		justify-content: space-between;
+	}
 	header nav ul li {
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: 14px;
 		padding: 0 10px;
-		display: inline;
 	}
 
+/** Desktop Menu, Reviews, and Address modifications **/
 	.section-one, .section-two, .section-three {
-	width: 33%;
-	display: inline;
+		width: 33%;
 }
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
 }
 
 }
