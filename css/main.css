@@ -184,7 +184,11 @@ footer span {
 
 /** Tablet **/
 @media (min-width: 768px) {
+	.bottom-section{
+		flex-flow: row wrap;
+}
 	.section-one, .section-two, .section-three {
+		flex-flow: row wrap;
 		width: 33%;
 }
 
@@ -207,6 +211,11 @@ footer span {
 		font-weight: 700;
 		font-size: 14px;
 		padding: 0 10px;
+	}
+
+	/** Bottom section Modifications **/
+	.bottom-section{
+		flex-flow: row wrap;
 	}
 
 /** Desktop Menu, Reviews, and Address modifications **/
