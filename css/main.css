@@ -186,6 +186,7 @@ footer span {
 @media (min-width: 768px) {
 	.bottom-section{
 		flex-flow: row wrap;
+		align-items: flex-start;
 }
 	.section-one, .section-two, .section-three {
 		flex-flow: row wrap;
@@ -200,6 +201,19 @@ footer span {
 
 /** Desktop **/
 @media (min-width: 1200px) {
+	/** Header Modification**/
+	header{
+		flex-flow: row wrap;
+		width: 100%;
+	}
+
+	header h1{
+		width: 50%;
+	}
+
+	header nav{
+		width: 50%;
+	}
 
 	/** Desktop Navigation modification **/
 	header nav ul{
