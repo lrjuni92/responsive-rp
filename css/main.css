@@ -135,6 +135,7 @@ header nav ul li a{
 .section-one, .section-two, .section-three {
 	height: auto;
 	border-top: 1px solid #eee;
+	width: 100%;
 }
 
 .section-one h4 {
