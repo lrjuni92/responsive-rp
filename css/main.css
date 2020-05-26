@@ -198,6 +198,7 @@ footer span {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
 	}
+	
 	footer{
 		flex-grow: 2
 	}
